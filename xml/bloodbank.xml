@@ -1,0 +1,28 @@
+<bloodbank>
+    <donors>
+        <donor id="1">
+            <name>John Doe</name>
+            <bloodgroup>A+</bloodgroup>
+            <age>30</age>
+            <gender>Male</gender>
+            <contact>1234567890</contact>
+        </donor>
+        <!-- More donor entries can follow -->
+    </donors>
+    <inventory>
+        <bloodtype>
+            <type>A+</type>
+            <quantity>20</quantity>
+        </bloodtype>
+        <!-- More blood type entries can follow -->
+    </inventory>
+    <requests>
+        <request id="1">
+            <hospital>Hospital A</hospital>
+            <bloodgroup>O-</bloodgroup>
+            <quantity>2</quantity>
+            <urgency>High</urgency>
+        </request>
+        <!-- More request entries can follow -->
+    </requests>
+</bloodbank>

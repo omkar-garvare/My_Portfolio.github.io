@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bloodbank">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="donors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="donor" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="bloodgroup" type="xs:string"/>
+                                        <xs:element name="age" type="xs:integer"/>
+                                        <xs:element name="gender" type="xs:string"/>
+                                        <xs:element name="contact" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="inventory">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bloodtype" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="type" type="xs:string"/>
+                                        <xs:element name="quantity" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="requests">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="request" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hospital" type="xs:string"/>
+                                        <xs:element name="bloodgroup" type="xs:string"/>
+                                        <xs:element name="quantity" type="xs:integer"/>
+                                        <xs:element name="urgency" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
