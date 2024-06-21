@@ -940,6 +940,32 @@ footer a i{
     }
 }
 
+@keyframes node{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes react{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes android{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
 @keyframes glow{
     0%{
         background: var(--bg-color);
