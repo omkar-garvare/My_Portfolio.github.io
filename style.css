@@ -591,6 +591,16 @@ section{
     animation: mysql 7s;
 }
 
+.skill-bar .bar .node{
+    width: 90%;
+    animation: mysql 8s;
+}
+
+.skill-bar .bar .android{
+    width: 85%;
+    animation: mysql 9s;
+}
+
 /* skill right */
 .professional{
     display: grid;
