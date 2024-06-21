@@ -591,13 +591,18 @@ section{
     animation: mysql 7s;
 }
 
+.skill-bar .bar .react{
+    width: 90%;
+    animation: java 3s;
+}
+
 .skill-bar .bar .node{
     width: 90%;
     animation: mysql 8s;
 }
 
 .skill-bar .bar .android{
-    width: 85%;
+    width: 95%;
     animation: mysql 9s;
 }
 
